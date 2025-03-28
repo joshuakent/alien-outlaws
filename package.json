@@ -1,0 +1,47 @@
+{
+	"name": "alien-outlaws",
+	"version": "1.0.0",
+	"description": "Alien Outlaws: The Cosmic Stampede - A Western Sci-fi action platformer",
+	"main": "src/index.js",
+	"scripts": {
+		"start": "webpack serve --config webpack.config.js --port 8081",
+		"build": "webpack --config webpack.config.js --mode production",
+		"generate-placeholders": "node scripts/generate-placeholders.js",
+		"generate-basic-assets": "node scripts/generate-basic-assets.js",
+		"audio-helper": "node scripts/audio-helper.js",
+		"generate-audio": "node scripts/generate-audio.js",
+		"generate-sheriff": "node scripts/generate-sheriff-sprite.js",
+		"generate-alien": "node scripts/generate-alien-sprite.js",
+		"generate-drone": "node scripts/generate-drone-sprite.js",
+		"generate-tileset": "node scripts/generate-tileset.js",
+		"generate-platform": "node scripts/generate-platform.js",
+		"generate-plasma-revolver": "node scripts/generate-plasma-revolver.js",
+		"generate-game-assets": "node scripts/generate-game-assets.js",
+		"generate-cowboy": "node scripts/generate-cowboy-sprite.js",
+		"generate-cowgirl": "node scripts/generate-cowgirl-sprite.js",
+		"generate-portal": "node scripts/generate-portal.js",
+		"generate-all": "npm run generate-sheriff && npm run generate-alien && npm run generate-drone && npm run generate-tileset && npm run generate-platform && npm run generate-plasma-revolver && npm run generate-game-assets && npm run generate-audio && npm run generate-cowboy && npm run generate-cowgirl && npm run generate-portal"
+	},
+	"keywords": [
+		"game",
+		"phaser",
+		"html5",
+		"western",
+		"sci-fi"
+	],
+	"author": "",
+	"license": "MIT",
+	"dependencies": {
+		"phaser": "^3.60.0"
+	},
+	"devDependencies": {
+		"canvas": "^3.1.0",
+		"copy-webpack-plugin": "^11.0.0",
+		"fs-extra": "^11.3.0",
+		"html-webpack-plugin": "^5.5.3",
+		"webpack": "^5.88.2",
+		"webpack-cli": "^5.1.4",
+		"webpack-dev-server": "^4.15.1"
+	}
+}
+
