@@ -552,6 +552,9 @@ export default class GameScene extends Phaser.Scene {
 		// Set game over flag
 		this.isGameOver = true;
 
+		// Reset level to 1
+		this.currentLevel = 1;
+
 		// Stop all game systems
 		this.physics.pause();
 		this.events.emit('gamePaused');
